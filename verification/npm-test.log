@@ -1,8 +1,0 @@
-
-> reunion-at-our-moms@1.0.0 test
-> node scripts/smoke-test.js && node scripts/regression-test.js
-
-Reunion mystery app running on http://localhost:3311
-Smoke test passed: secure content, validated actions, immutable scoring, sanitized host data, leaderboard, and QR APIs.
-Reunion mystery app running on http://localhost:3312
-Regression test passed: pacing, distinct case modes, PIN throttling, PWA session retention, cache refresh, and progress clamp.
