@@ -1,0 +1,1792 @@
+{
+  "project": "Reunion at Our Mom's - Self-Guided Digital Mystery",
+  "version": "Phase 2 App Content Blueprint v1.0",
+  "mode": "Independent restaurant play",
+  "design_principles": [
+    "Every player or table can complete the case independently.",
+    "All essential information becomes available within the app.",
+    "Evidence unlocks primarily through logical progression, with soft minimum timers.",
+    "Wrong answers never permanently block progress.",
+    "Restaurant staff do not need to act, distribute timed packets, or manage clues."
+  ],
+  "chapters": [
+    {
+      "id": "C00",
+      "title": "Prologue: Welcome Back",
+      "estimated": "3-5 minutes",
+      "min_seconds": 0,
+      "intro_headline": "A reunion twenty years in the making.",
+      "intro_body": "The Magnolia Ridge High School Class of 2006 has returned to Our Mom's Restaurant & Bar. Former class president Blake Landry promises to open the class time capsule and reveal a secret that changed someone's future.",
+      "objectives": [
+        "Choose individual or table-team play.",
+        "Learn how evidence, interviews, hints, and notes work.",
+        "Review the case objective."
+      ],
+      "required_actions": [
+        "Open E01.",
+        "Open E02.",
+        "Choose Quick, Standard, or Extended case length."
+      ],
+      "completion_prompt": "You know the assignment. Enter the reunion and meet the guests.",
+      "completion_button": "Enter the Reunion",
+      "index": 0
+    },
+    {
+      "id": "C01",
+      "title": "Chapter 1: Old Friends, Old Enemies",
+      "estimated": "8-12 minutes",
+      "min_seconds": 240,
+      "intro_headline": "Everyone remembers graduation differently.",
+      "intro_body": "Review the reunion photograph, Blake's remarks, and the guests' public profiles. Several classmates have reasons to fear what Blake plans to reveal.",
+      "objectives": [
+        "Open all suspect names at least once or mark them to review later.",
+        "Review E03 and E04.",
+        "Identify at least three people Blake may have threatened."
+      ],
+      "required_actions": [
+        "Review E03.",
+        "Review E04.",
+        "Open at least six suspect profiles."
+      ],
+      "knowledge_check": {
+        "question": "What is Blake threatening to reveal?",
+        "options": [
+          "A restaurant accounting error",
+          "A secret connected to senior year and the time capsule",
+          "A present-day sports scandal",
+          "The identity of a surprise reunion performer"
+        ],
+        "correct": 1,
+        "wrong": "That detail appears in Blake's remarks. Reopen the transcript and look for what was 'buried.'",
+        "hint1": "The threat concerns the past, not tonight's restaurant operations.",
+        "hint2": "Blake says the class buried a lie.",
+        "hint3": "The secret is connected to senior year and the time capsule."
+      },
+      "completion_prompt": "Blake steps away from the microphone. Moments later, a crash comes from the reunion photo display.",
+      "completion_button": "Investigate the Crash",
+      "index": 1
+    },
+    {
+      "id": "C02",
+      "title": "Chapter 2: The Murder",
+      "estimated": "12-18 minutes",
+      "min_seconds": 360,
+      "intro_headline": "Blake Landry is dead.",
+      "intro_body": "The photo display has been disturbed. A trophy is missing, a pin lies near the scene, and Blake's final phone draft points toward someone with the initials M.T.",
+      "objectives": [
+        "Establish the murder window.",
+        "Identify the likely category of weapon.",
+        "Begin comparing suspect alibis."
+      ],
+      "required_actions": [
+        "Review E05, E06, and E07.",
+        "Open at least four suspect interviews.",
+        "Save one notebook note."
+      ],
+      "knowledge_check": {
+        "question": "Which fact is most useful for testing alibis?",
+        "options": [
+          "The class graduated in 2006",
+          "The murder window was 8:34-8:39 p.m.",
+          "Noah enjoys pranks",
+          "The reunion has a photo backdrop"
+        ],
+        "correct": 1,
+        "wrong": "Look for the fact that can be compared directly with timestamps and witness statements.",
+        "hint1": "An alibi must cover a specific period.",
+        "hint2": "The crime-scene report gives a five-minute range.",
+        "hint3": "Use 8:34-8:39 p.m. to test every alibi."
+      },
+      "completion_prompt": "Blake's death gave nearly everyone a motive. Now determine which motives are real threats and which are distractions.",
+      "completion_button": "Follow the Motives",
+      "index": 2
+    },
+    {
+      "id": "C03",
+      "title": "Chapter 3: Everyone Had a Reason",
+      "estimated": "15-22 minutes",
+      "min_seconds": 420,
+      "intro_headline": "Blake collected leverage like souvenirs.",
+      "intro_body": "Investigate the money trail, private messages, debts, stolen work, institutional cover-up, and the cryptic note beside Morgan's name: 'original application.'",
+      "objectives": [
+        "Complete at least two lead paths.",
+        "Separate motives from opportunity.",
+        "Identify the lead tied to a historical document."
+      ],
+      "lead_paths": [
+        {
+          "id": "L01",
+          "name": "Money",
+          "evidence": [
+            "E08"
+          ],
+          "suspects": [
+            "S04",
+            "S05"
+          ]
+        },
+        {
+          "id": "L02",
+          "name": "Private Messages",
+          "evidence": [
+            "E09",
+            "E16"
+          ],
+          "suspects": [
+            "S03"
+          ]
+        },
+        {
+          "id": "L03",
+          "name": "Blackmail and Ownership",
+          "evidence": [
+            "E09",
+            "E21"
+          ],
+          "suspects": [
+            "S06",
+            "S11"
+          ]
+        },
+        {
+          "id": "L04",
+          "name": "The School Cover-Up",
+          "evidence": [
+            "E09",
+            "E19"
+          ],
+          "suspects": [
+            "S08",
+            "S10"
+          ]
+        },
+        {
+          "id": "L05",
+          "name": "The Original Application",
+          "evidence": [
+            "E09"
+          ],
+          "suspects": [
+            "S01",
+            "S02",
+            "S12"
+          ]
+        }
+      ],
+      "required_actions": [
+        "Complete any two lead paths.",
+        "Review E09.",
+        "Mark at least one clue as a red herring or explained."
+      ],
+      "knowledge_check": {
+        "question": "Which entry on Blake's list connects most directly to the time-capsule secret?",
+        "options": [
+          "Camille - messages",
+          "Jace - loan",
+          "Riley - equity",
+          "Morgan - original application"
+        ],
+        "correct": 3,
+        "wrong": "Choose the item that refers to an old document rather than a present-day dispute.",
+        "hint1": "The time capsule contains papers from high school.",
+        "hint2": "An application can be preserved as documentary proof.",
+        "hint3": "Morgan - original application is the key connection."
+      },
+      "completion_prompt": "The strongest lead points back to a scholarship application that supposedly never existed.",
+      "completion_button": "Open the Time Capsule",
+      "index": 3
+    },
+    {
+      "id": "C04",
+      "title": "Chapter 4: The Time Capsule",
+      "estimated": "12-18 minutes",
+      "min_seconds": 360,
+      "intro_headline": "The past was documented.",
+      "intro_body": "The capsule contains a torn scholarship envelope and Blake's letter. Dani's photo metadata tests Morgan's alibi against the exact murder window.",
+      "objectives": [
+        "Authenticate Avery's application.",
+        "Compare Morgan's statement with the photo timestamp.",
+        "Review evidence connecting motive, opportunity, and weapon."
+      ],
+      "required_actions": [
+        "Review E10, E11, and E12.",
+        "Ask Morgan the E11-gated follow-up.",
+        "Create or confirm one evidence connection."
+      ],
+      "knowledge_check": {
+        "question": "Why does the 8:31 p.m. photograph damage Morgan's alibi?",
+        "options": [
+          "It proves Morgan left the restaurant",
+          "It proves the camera was broken",
+          "It occurred before the 8:34-8:39 murder window",
+          "It shows Morgan without a campaign pin"
+        ],
+        "correct": 2,
+        "wrong": "Compare the capture time with the crime-scene report's murder window.",
+        "hint1": "The photograph can only prove where Morgan was when it was taken.",
+        "hint2": "8:31 is earlier than 8:34.",
+        "hint3": "The photo was taken before the murder window, so it cannot cover Morgan's alibi."
+      },
+      "completion_prompt": "You now have enough information to accuse a killer. Review your notes before submitting; your final accusation cannot be changed after confirmation.",
+      "completion_button": "Prepare Final Accusation",
+      "index": 4
+    },
+    {
+      "id": "C05",
+      "title": "Chapter 5: Final Accusation",
+      "estimated": "5-8 minutes",
+      "min_seconds": 0,
+      "intro_headline": "Name the killer and prove the case.",
+      "intro_body": "Select the killer, motive, weapon, and clue that disproves the killer's alibi. Add an optional explanation for bonus points.",
+      "objectives": [
+        "Submit all four required answers.",
+        "Optionally reconstruct the sequence of the crime.",
+        "Confirm the accusation."
+      ],
+      "required_actions": [
+        "Complete final accusation form."
+      ],
+      "completion_prompt": "Accusation submitted. The case file is being evaluated.",
+      "completion_button": "Reveal the Truth",
+      "index": 5
+    }
+  ],
+  "suspects": [
+    {
+      "id": "S01",
+      "name": "Morgan Tate",
+      "label": "The Political Star",
+      "role": "Former yearbook editor; now a local political candidate.",
+      "public": "Polished, disciplined, and eager to control the reunion narrative.",
+      "motive": "Blake planned to expose the scholarship fraud that launched Morgan's public life.",
+      "alibi": "Morgan claims the official group photograph was being taken throughout the murder window.",
+      "initial": "I was with the group for the reunion photo when Blake was attacked. Blake loved dramatic threats, but I had no reason to take them seriously.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "What was your relationship with Blake?",
+          "a": "We served on the yearbook staff together. We stayed in touch because he was involved in local business and community events. We were not close."
+        },
+        {
+          "id": "Q2",
+          "q": "Why did Blake refer to an 'original application'?",
+          "a": "I have no idea. Blake collected old papers and used vague phrases to make people nervous."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you between 8:34 and 8:39 p.m.?",
+          "a": "At the photo backdrop with the class. Dani was taking the official reunion picture. Plenty of people saw me."
+        },
+        {
+          "id": "Q4",
+          "q": "Did you lose a campaign pin?",
+          "a": "Possibly. I handed out several tonight, and one could have fallen from my jacket at any point."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E11"
+          ],
+          "q": "The group photo was taken at 8:31 p.m. Why did you say it covered the murder window?",
+          "a": "Then I remembered the time incorrectly. I stayed near the backdrop after the photograph. I was speaking with classmates.",
+          "impact": "Creates a second unsupported version of Morgan's alibi."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E10",
+            "E12"
+          ],
+          "q": "Why does Blake's letter say you removed Avery's scholarship application?",
+          "a": "Blake was a blackmailer. He twisted an old school mistake into a crime. Avery's application was misplaced; I did not steal it.",
+          "impact": "Morgan admits knowledge of the missing application but minimizes the conduct."
+        },
+        {
+          "id": "F3",
+          "requires": [
+            "E15"
+          ],
+          "q": "Why was the missing trophy found in a decoration box assigned to your campaign display?",
+          "a": "Anyone could have put it there to frame me.",
+          "impact": "Morgan offers no evidence explaining access to the box."
+        }
+      ],
+      "truth": "Morgan killed Blake with the bronze trophy after he refused to surrender the scholarship evidence.",
+      "notebook_tags": [
+        "motive",
+        "false alibi",
+        "physical evidence",
+        "scholarship"
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "Avery Brooks",
+      "label": "The Forgotten Valedictorian",
+      "role": "Former valedictorian; now a teacher or professor.",
+      "public": "Intelligent, restrained, and still hurt by the opportunities lost after graduation.",
+      "motive": "Blake knew Avery's scholarship had been stolen and stayed silent for twenty years.",
+      "alibi": "Avery was at the time-capsule table with Priya during most of the murder window.",
+      "initial": "Blake owed me the truth. That does not mean I wanted him dead. I wanted him to finally admit what he knew.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "What happened with the scholarship?",
+          "a": "My application disappeared before the final review. I was told it had never been submitted, even though I handed it to the school office myself."
+        },
+        {
+          "id": "Q2",
+          "q": "Did you confront Blake tonight?",
+          "a": "Yes. He said the proof would be revealed when the time capsule opened. I told him twenty years was too late for theatrics."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you during the murder window?",
+          "a": "I was helping Priya inspect the time capsule seal. She can confirm that."
+        },
+        {
+          "id": "Q4",
+          "q": "Did you touch the trophy?",
+          "a": "No. I saw it on the display when I arrived, but I never handled it."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E10"
+          ],
+          "q": "Is the torn envelope yours?",
+          "a": "Yes. That is my handwriting and the scholarship name. I have not seen that envelope since 2006.",
+          "impact": "Authenticates the scholarship evidence."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E12"
+          ],
+          "q": "Did Blake ever tell you Morgan was responsible?",
+          "a": "Not directly. He implied someone successful had built a life on my work. I suspected Morgan, but I could not prove it.",
+          "impact": "Shows Avery had suspicion, not knowledge or access to Blake's documents."
+        }
+      ],
+      "truth": "Avery is an innocent victim of the original fraud and a strong red-herring suspect.",
+      "notebook_tags": [
+        "motive",
+        "victim of fraud",
+        "corroborated alibi"
+      ]
+    },
+    {
+      "id": "S03",
+      "name": "Camille Dupr\u00e9",
+      "label": "The Former Prom Queen",
+      "role": "Former prom queen; now a business owner and lifestyle personality.",
+      "public": "Charming, image-conscious, and determined to keep private messages private.",
+      "motive": "Blake threatened to expose their renewed affair and damage Camille's marriage and brand.",
+      "alibi": "A digital drink order and bar-camera still place Camille at the bar at 8:36 p.m.",
+      "initial": "Blake and I had history. He confused history with ownership. I was angry, but I was at the bar when he died.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "Were you romantically involved with Blake?",
+          "a": "We exchanged messages. That is personal, embarrassing, and irrelevant to murder."
+        },
+        {
+          "id": "Q2",
+          "q": "Did Blake threaten you?",
+          "a": "He threatened to show private messages to my spouse unless I helped promote one of his developments."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you from 8:34 to 8:39 p.m.?",
+          "a": "At the bar ordering a drink. The order should have a timestamp."
+        },
+        {
+          "id": "Q4",
+          "q": "Did you go near the photo backdrop?",
+          "a": "Earlier, for pictures. Not during the murder window."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E09"
+          ],
+          "q": "Blake's list says 'messages.' What was he keeping?",
+          "a": "Screenshots. He saved every private conversation because he enjoyed controlling people.",
+          "impact": "Confirms Blake's blackmail pattern."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E16"
+          ],
+          "q": "The bar record places you there at 8:36. Who saw you?",
+          "a": "The bartender and two guests waiting to order. I stayed until my drink was served.",
+          "impact": "Corroborates Camille's alibi."
+        }
+      ],
+      "truth": "Camille had motive but a digitally corroborated alibi.",
+      "notebook_tags": [
+        "blackmail",
+        "affair",
+        "corroborated alibi"
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "Jace Broussard",
+      "label": "The Fallen Football Hero",
+      "role": "Former star quarterback; now financially strained.",
+      "public": "Proud, defensive, and desperate to hide how much money he owes.",
+      "motive": "Blake threatened to publicly demand repayment of a large personal loan.",
+      "alibi": "Jace was on a seven-minute call outside during the murder window.",
+      "initial": "I owed Blake money, and he enjoyed humiliating me about it. I was outside taking a call when he was killed.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "How much did you owe Blake?",
+          "a": "Enough to be embarrassed. Not enough to kill anyone."
+        },
+        {
+          "id": "Q2",
+          "q": "Who were you calling?",
+          "a": "My brother. We were discussing a payment plan and whether I should sell my truck."
+        },
+        {
+          "id": "Q3",
+          "q": "Did Blake threaten you tonight?",
+          "a": "He said he might announce the debt during the reunion awards."
+        },
+        {
+          "id": "Q4",
+          "q": "Did you see Morgan after the group photo?",
+          "a": "I saw her leave the group and head toward Blake, but I went outside before I saw where she stopped."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E09"
+          ],
+          "q": "Why was the loan on Blake's private list?",
+          "a": "Because he treated debts like trophies. He wanted everyone to know he had rescued the former football star.",
+          "impact": "Explains Jace's motive without tying him to the physical evidence."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E17"
+          ],
+          "q": "The call log runs from 8:33 to 8:40. Did you leave the call?",
+          "a": "No. My brother stayed on the line the entire time, and the patio camera shows me outside.",
+          "impact": "Clears Jace during the murder window."
+        }
+      ],
+      "truth": "Jace saw Morgan moving toward Blake but did not witness the murder.",
+      "notebook_tags": [
+        "debt",
+        "witness",
+        "corroborated alibi"
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "Tessa Nguyen",
+      "label": "The Reunion Organizer",
+      "role": "Former student-council treasurer; now an event planner.",
+      "public": "Organized, anxious, and worried the reunion finances will make her look dishonest.",
+      "motive": "Blake accused Tessa of mishandling reunion money.",
+      "alibi": "A server and a digital invoice revision place Tessa at the service station from 8:35 to 8:40 p.m.",
+      "initial": "The books looked wrong because a charge was entered twice. Blake knew that, but he liked watching me panic.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "Was money missing?",
+          "a": "No. A vendor adjustment was duplicated. I was reconciling it when Blake died."
+        },
+        {
+          "id": "Q2",
+          "q": "Did Blake threaten you?",
+          "a": "He said he would tell the class I stole from them unless I gave him access to the attendee list."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you during the murder window?",
+          "a": "At the service station with a restaurant employee reviewing the invoice."
+        },
+        {
+          "id": "Q4",
+          "q": "Who had access to the decoration boxes?",
+          "a": "I labeled them by display: yearbook, athletics, campaign, and time capsule. Volunteers could reach them."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E08"
+          ],
+          "q": "What caused the discrepancy?",
+          "a": "The catering adjustment was posted twice. The correction timestamp shows I was working on it during the murder window.",
+          "impact": "Turns the finance lead into a clearing clue."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E12"
+          ],
+          "q": "Which box contained the trophy?",
+          "a": "The box labeled 'Campaign Display.' Morgan had asked me where it was stored earlier.",
+          "impact": "Connects Morgan to the trophy hiding place."
+        }
+      ],
+      "truth": "Tessa is innocent and provides operational evidence linking Morgan to the box.",
+      "notebook_tags": [
+        "finance red herring",
+        "box access",
+        "corroborated alibi"
+      ]
+    },
+    {
+      "id": "S06",
+      "name": "Eli Jackson",
+      "label": "The Musician",
+      "role": "Former band student; now a local musician.",
+      "public": "Creative, sarcastic, and angry that Blake profited from Eli's song.",
+      "motive": "Blake used Eli's song in a commercial without permission or payment.",
+      "alibi": "A continuous sound recording places Eli on the small stage during the murder window.",
+      "initial": "Blake stole my work and called it business. I wanted credit and payment. I did not want a murder charge.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "What did Blake steal?",
+          "a": "A song I wrote in high school. He used the melody in a real-estate commercial and claimed it was commissioned."
+        },
+        {
+          "id": "Q2",
+          "q": "Did you confront him?",
+          "a": "Yes. He laughed and told me nobody could prove when the song was written."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you at 8:36 p.m.?",
+          "a": "On the small stage checking the microphone and playing the song."
+        },
+        {
+          "id": "Q4",
+          "q": "Did you hear anything near the photo area?",
+          "a": "A sharp crash near the end of my soundcheck. I assumed a display had fallen."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E09"
+          ],
+          "q": "Why did Blake write 'song' beside your name?",
+          "a": "It was leverage. He promised to admit what he did if I performed at his events for free.",
+          "impact": "Confirms another blackmail motive."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E18"
+          ],
+          "q": "Does the stage recording cover the full murder window?",
+          "a": "Yes. The microphone recorded continuously from 8:33 to 8:41, including my voice and guitar.",
+          "impact": "Clears Eli and establishes the crash time."
+        }
+      ],
+      "truth": "Eli heard the impact but remained onstage.",
+      "notebook_tags": [
+        "stolen work",
+        "sound witness",
+        "corroborated alibi"
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "Dani LeBlanc",
+      "label": "The Photographer",
+      "role": "Former yearbook photographer; now a professional photographer.",
+      "public": "Observant, careful, and reluctant to become the center of the investigation.",
+      "motive": "Blake once took credit for Dani's award-winning photograph.",
+      "alibi": "Dani was importing photos at the media table, with device logs showing activity throughout the murder window.",
+      "initial": "I photograph what happens. Sometimes the camera records more than people realize.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "When was the group photo taken?",
+          "a": "At 8:31 p.m. The camera metadata is automatic."
+        },
+        {
+          "id": "Q2",
+          "q": "Did you see Morgan after the photo?",
+          "a": "She left the group and moved toward the side of the backdrop. I was packing equipment and did not follow her."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you during the murder?",
+          "a": "At the media table importing files to my tablet."
+        },
+        {
+          "id": "Q4",
+          "q": "Did your camera capture anything else?",
+          "a": "Possibly. I take test frames before and after group shots. I need to review them."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E11"
+          ],
+          "q": "Can the 8:31 timestamp be altered accidentally?",
+          "a": "No. The camera synchronized automatically with my tablet when I imported the files.",
+          "impact": "Authenticates the false-alibi clue."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E11"
+          ],
+          "q": "What does your test frame show?",
+          "a": "Morgan is near the edge of the backdrop at 8:35 p.m. Blake's jacket is visible behind it.",
+          "impact": "Places Morgan with Blake during the murder window."
+        }
+      ],
+      "truth": "Dani provides the decisive digital evidence but is not involved in the crime.",
+      "notebook_tags": [
+        "photo metadata",
+        "eyewitness",
+        "digital evidence"
+      ]
+    },
+    {
+      "id": "S08",
+      "name": "Marcus Reed",
+      "label": "The Investigator",
+      "role": "Former school reporter; now a journalist or podcaster.",
+      "public": "Persistent, skeptical, and determined to expose the truth Blake suppressed.",
+      "motive": "Blake killed Marcus's scholarship-scandal story in 2006 and damaged his early career.",
+      "alibi": "Marcus recorded an interview with Principal Hart from 8:35 to 8:39 p.m.",
+      "initial": "I came to investigate Blake, not kill him. I suspected the scholarship story was real long before tonight.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "What story did Blake suppress?",
+          "a": "I wrote that a scholarship file had disappeared. Blake convinced the adviser it was unsupported gossip."
+        },
+        {
+          "id": "Q2",
+          "q": "Why attend the reunion?",
+          "a": "I believed Blake was finally ready to prove the story and wanted the record preserved."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you during the murder?",
+          "a": "Recording an interview with Principal Hart at a side table."
+        },
+        {
+          "id": "Q4",
+          "q": "Who did you suspect before the murder?",
+          "a": "Anyone whose success depended on the missing application, especially Morgan."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E10"
+          ],
+          "q": "Does the envelope support your old story?",
+          "a": "Yes. It proves Avery's application existed and was handled by someone before the final review.",
+          "impact": "Connects historical reporting to the physical document."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E19"
+          ],
+          "q": "Does your recording establish your location?",
+          "a": "Yes. It is continuous and includes the announcement of Blake's death at the end.",
+          "impact": "Clears Marcus and Principal Hart."
+        }
+      ],
+      "truth": "Marcus is correct about the scandal but had no opportunity to kill Blake.",
+      "notebook_tags": [
+        "scholarship lead",
+        "recorded alibi",
+        "historical witness"
+      ]
+    },
+    {
+      "id": "S09",
+      "name": "Noah Baptiste",
+      "label": "The Class Clown",
+      "role": "Former prankster; now a comedian, radio personality, or salesperson.",
+      "public": "Funny, impulsive, and terrified that his prank note will make him look guilty.",
+      "motive": "Blake intended to embarrass Noah with old disciplinary records.",
+      "alibi": "A timestamped selfie video places Noah in the hallway with two classmates at 8:36 p.m.",
+      "initial": "I wrote the note. It was a stupid prank. I did not kill Blake, and I did not expect him to keep it.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "Why write the threat?",
+          "a": "Because Blake kept saying the time capsule would ruin someone. I wanted to scare him before the reveal."
+        },
+        {
+          "id": "Q2",
+          "q": "Where did you get the paper?",
+          "a": "From the registration table. Anyone could have used it."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you during the murder?",
+          "a": "Making a reunion video in the hallway with two classmates."
+        },
+        {
+          "id": "Q4",
+          "q": "Did you know what was in the time capsule?",
+          "a": "No. I assumed embarrassing photos and old letters."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E06"
+          ],
+          "q": "Did you intend the note as a real threat?",
+          "a": "No. I expected Blake to read it, laugh, and blame me immediately.",
+          "impact": "Explains the red herring honestly."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E20"
+          ],
+          "q": "Is the hallway video continuous?",
+          "a": "It runs from 8:35 to 8:38, and other guests are visible with me.",
+          "impact": "Clears Noah during most of the murder window."
+        }
+      ],
+      "truth": "Noah wrote the note but did not commit the murder.",
+      "notebook_tags": [
+        "threat note",
+        "prank",
+        "corroborated alibi"
+      ]
+    },
+    {
+      "id": "S10",
+      "name": "Principal Evelyn Hart",
+      "label": "The Retired Administrator",
+      "role": "Former assistant principal; now retired.",
+      "public": "Formal, protective of the school, and ashamed she stopped the original inquiry.",
+      "motive": "Blake planned to reveal Hart's role in burying the scholarship investigation.",
+      "alibi": "Hart was in Marcus's recorded interview during the murder window.",
+      "initial": "I made a cowardly decision in 2006. I protected the school from scandal instead of protecting a student.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "What did you know about the scholarship?",
+          "a": "I knew Avery insisted the application had been submitted. I authorized a brief inquiry and then ended it."
+        },
+        {
+          "id": "Q2",
+          "q": "Why end the inquiry?",
+          "a": "The school was facing accreditation concerns. I believed another scandal would damage every student."
+        },
+        {
+          "id": "Q3",
+          "q": "Did you know Morgan was responsible?",
+          "a": "I suspected someone on the yearbook staff had accessed office materials. I never proved who."
+        },
+        {
+          "id": "Q4",
+          "q": "Where were you during the murder?",
+          "a": "Speaking with Marcus while he recorded our conversation."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E12"
+          ],
+          "q": "Does Blake's letter match what you suspected?",
+          "a": "Yes. It confirms the possibility I was afraid to investigate.",
+          "impact": "Validates Blake's historical account."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E19"
+          ],
+          "q": "Does the recording cover the murder window?",
+          "a": "Yes. I never left the table.",
+          "impact": "Clears Hart despite her serious motive."
+        }
+      ],
+      "truth": "Hart concealed an institutional failure but did not kill Blake.",
+      "notebook_tags": [
+        "cover-up",
+        "school records",
+        "recorded alibi"
+      ]
+    },
+    {
+      "id": "S11",
+      "name": "Riley Fontenot",
+      "label": "The Former Outsider",
+      "role": "Formerly isolated student; now a successful technology entrepreneur.",
+      "public": "Reserved, confident, and unwilling to forgive Blake's bullying and business demands.",
+      "motive": "Blake demanded ownership in Riley's company and threatened to release humiliating school footage.",
+      "alibi": "Riley was at the entrance accepting a courier delivery from 8:34 to 8:40 p.m.",
+      "initial": "Blake mistook my success for something he deserved a piece of. I came to tell him no in person.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "What did Blake want from you?",
+          "a": "Five percent of my company in exchange for destroying old footage of students bullying me."
+        },
+        {
+          "id": "Q2",
+          "q": "Did you threaten him?",
+          "a": "I told him my lawyers would bury him. That was a legal threat, not a physical one."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you during the murder?",
+          "a": "At the entrance signing for equipment delivered for the reunion display."
+        },
+        {
+          "id": "Q4",
+          "q": "What was delivered?",
+          "a": "A replacement projector cable and adapter requested by Tessa."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E09"
+          ],
+          "q": "What does 'equity' mean on Blake's list?",
+          "a": "His demand for company ownership. He kept the bullying footage as leverage.",
+          "impact": "Confirms Riley's motive."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E21"
+          ],
+          "q": "Can the delivery be verified?",
+          "a": "Yes. The courier scan, signature, and entrance camera all place me there.",
+          "impact": "Clears Riley during the murder window."
+        }
+      ],
+      "truth": "Riley had a powerful motive but a strong third-party alibi.",
+      "notebook_tags": [
+        "extortion",
+        "business",
+        "corroborated alibi"
+      ]
+    },
+    {
+      "id": "S12",
+      "name": "Dr. Priya Patel",
+      "label": "The Science Star",
+      "role": "Former science-club president; now a physician, pharmacist, or researcher.",
+      "public": "Logical, direct, and hiding that she helped Blake open the time capsule early.",
+      "motive": "Blake threatened to blame Priya for tampering with the capsule.",
+      "alibi": "Priya was at the time-capsule table with Avery and appears in a timestamped room photo at 8:37 p.m.",
+      "initial": "Blake asked me to verify whether the capsule contents had deteriorated. I should not have helped him open it early.",
+      "questions": [
+        {
+          "id": "Q1",
+          "q": "Why was the time capsule opened early?",
+          "a": "Blake said moisture may have damaged the papers. We opened it briefly, photographed the contents, and resealed it."
+        },
+        {
+          "id": "Q2",
+          "q": "Did you see the scholarship documents?",
+          "a": "I saw an old envelope and papers, but Blake closed the folder before I could read them."
+        },
+        {
+          "id": "Q3",
+          "q": "Where were you during the murder?",
+          "a": "At the capsule display with Avery, checking the seal."
+        },
+        {
+          "id": "Q4",
+          "q": "Did Blake threaten you?",
+          "a": "He said if anyone complained about the early opening, he would say it was my idea."
+        }
+      ],
+      "followups": [
+        {
+          "id": "F1",
+          "requires": [
+            "E10"
+          ],
+          "q": "Is the torn envelope what you saw earlier?",
+          "a": "Yes. It was inside Blake's folder when we opened the capsule.",
+          "impact": "Places the scholarship evidence in Blake's possession before the murder."
+        },
+        {
+          "id": "F2",
+          "requires": [
+            "E10"
+          ],
+          "q": "What does the 8:37 room photo establish?",
+          "a": "Avery and I are both visible at the capsule table while the photo backdrop is unattended in the background.",
+          "impact": "Clears Priya and Avery while narrowing opportunity."
+        }
+      ],
+      "truth": "Priya confirms Blake had the evidence and helps clear Avery.",
+      "notebook_tags": [
+        "time capsule",
+        "document custody",
+        "corroborated alibi"
+      ]
+    }
+  ],
+  "additional_evidence": [
+    {
+      "id": "E14",
+      "title": "Dani's Test Frame",
+      "chapter": "C04",
+      "unlock": "Ask Dani F2 after E11",
+      "content": "A test frame timestamped 8:35 p.m. shows Morgan at the edge of the backdrop. Part of Blake's jacket is visible behind the backdrop.",
+      "purpose": "Places Morgan with Blake inside the murder window."
+    },
+    {
+      "id": "E15",
+      "title": "Trophy Recovery Report",
+      "chapter": "C04",
+      "unlock": "Review E12 and interview Tessa F2",
+      "content": "The bronze trophy is recovered from a decoration box labeled Campaign Display. A small fiber matching Morgan's jacket is caught on the base.",
+      "purpose": "Links weapon and hiding place to Morgan."
+    },
+    {
+      "id": "E16",
+      "title": "Bar Order Record",
+      "chapter": "C03",
+      "unlock": "Complete Private Messages lead",
+      "content": "Camille's order was entered at 8:36 p.m.; a bar-camera still shows her waiting at the counter.",
+      "purpose": "Clears Camille."
+    },
+    {
+      "id": "E17",
+      "title": "Jace Call Log",
+      "chapter": "C03",
+      "unlock": "Complete Money lead",
+      "content": "Continuous call from 8:33 to 8:40 p.m., supported by patio camera footage.",
+      "purpose": "Clears Jace."
+    },
+    {
+      "id": "E18",
+      "title": "Stage Audio Recording",
+      "chapter": "C03",
+      "unlock": "Interview Eli after E09",
+      "content": "Continuous microphone recording from 8:33 to 8:41 p.m.; a crash is audible at approximately 8:37 p.m.",
+      "purpose": "Clears Eli and sharpens the timeline."
+    },
+    {
+      "id": "E19",
+      "title": "Marcus Interview Recording",
+      "chapter": "C03",
+      "unlock": "Complete School Cover-Up lead",
+      "content": "Continuous recording of Marcus and Principal Hart from 8:35 to 8:39 p.m.",
+      "purpose": "Clears Marcus and Hart."
+    },
+    {
+      "id": "E20",
+      "title": "Noah's Hallway Video",
+      "chapter": "C03",
+      "unlock": "Ask Noah about his alibi",
+      "content": "Timestamped video from 8:35 to 8:38 p.m. shows Noah with two classmates.",
+      "purpose": "Explains the note while clearing Noah."
+    },
+    {
+      "id": "E21",
+      "title": "Courier Delivery Record",
+      "chapter": "C03",
+      "unlock": "Complete Blackmail and Ownership lead",
+      "content": "Riley signs for a delivery at 8:36 p.m.; the entry camera shows Riley at the door until 8:40.",
+      "purpose": "Clears Riley."
+    },
+    {
+      "id": "E22",
+      "title": "Time-Capsule Table Photo",
+      "chapter": "C04",
+      "unlock": "Interview Priya after E10",
+      "content": "A room photo timestamped 8:37 p.m. shows Priya and Avery at the capsule table.",
+      "purpose": "Clears Avery and Priya."
+    }
+  ],
+  "hints": {
+    "global_rules": {
+      "levels": 3,
+      "penalty_per_hint": 2,
+      "never_lock_player": true,
+      "wrong_answer_behavior": [
+        "First wrong answer: show a neutral retry message and reopen the relevant evidence link.",
+        "Second wrong answer: offer Hint 1 without automatically applying the score penalty.",
+        "Third wrong answer: offer Hint 2 and a 'Continue anyway' option after required evidence is reviewed.",
+        "Hint 3 gives the reasoning directly but does not select the answer for the player."
+      ],
+      "pause_behavior": "Personal minimum timers pause when the player pauses the case or the app is inactive for more than five minutes.",
+      "accessibility": "All audio or animation content must have captions and a static text alternative."
+    },
+    "case_hints": [
+      {
+        "id": "H01",
+        "topic": "Where to begin",
+        "h1": "Build a timeline before choosing a suspect.",
+        "h2": "Compare every alibi to 8:34-8:39 p.m.",
+        "h3": "Morgan's photo claim fails because the image was taken at 8:31 p.m."
+      },
+      {
+        "id": "H02",
+        "topic": "Motive",
+        "h1": "Find the person whose current life depends on a secret from 2006.",
+        "h2": "Blake's list connects Morgan to an original application.",
+        "h3": "Morgan feared exposure of the scholarship fraud."
+      },
+      {
+        "id": "H03",
+        "topic": "Weapon",
+        "h1": "Look for an object that disappeared from the crime scene.",
+        "h2": "The injury was caused by blunt force.",
+        "h3": "The bronze Most Likely to Succeed trophy was the weapon."
+      },
+      {
+        "id": "H04",
+        "topic": "Red herrings",
+        "h1": "A motive does not establish opportunity.",
+        "h2": "Check whether each suspect has a timestamped or recorded alibi.",
+        "h3": "The threatening note, finances, affair, loan, song, and cover-up explain suspicion but do not place those suspects at the scene."
+      }
+    ]
+  },
+  "notebook": {
+    "tabs": [
+      {
+        "id": "N01",
+        "name": "Suspects",
+        "fields": [
+          "status: unknown/suspicious/cleared",
+          "motive",
+          "alibi",
+          "contradictions",
+          "linked evidence"
+        ]
+      },
+      {
+        "id": "N02",
+        "name": "Timeline",
+        "fields": [
+          "time",
+          "event",
+          "source",
+          "confidence"
+        ]
+      },
+      {
+        "id": "N03",
+        "name": "Evidence",
+        "fields": [
+          "evidence id",
+          "importance",
+          "interpretation",
+          "linked suspect",
+          "status: unexplained/explained/red herring"
+        ]
+      },
+      {
+        "id": "N04",
+        "name": "Theories",
+        "fields": [
+          "suspected killer",
+          "motive",
+          "weapon",
+          "alibi problem",
+          "supporting evidence",
+          "weakness"
+        ]
+      },
+      {
+        "id": "N05",
+        "name": "Questions",
+        "fields": [
+          "question",
+          "suspect",
+          "answered yes/no",
+          "answer summary"
+        ]
+      }
+    ],
+    "quick_actions": [
+      "Mark suspicious",
+      "Mark explained",
+      "Mark red herring",
+      "Link to suspect",
+      "Add to timeline",
+      "Compare evidence"
+    ],
+    "suggested_auto_entries": [
+      "8:31 p.m. - Official group photo captured.",
+      "8:34-8:39 p.m. - Estimated murder window.",
+      "A bronze trophy is missing from the display.",
+      "Blake's phone draft names M.T. and an original file.",
+      "Morgan claims the photo covered the murder window."
+    ],
+    "connection_examples": [
+      {
+        "from": "E03",
+        "to": "E11",
+        "label": "same photograph; metadata reveals exact time"
+      },
+      {
+        "from": "E07",
+        "to": "E09",
+        "label": "M.T. and original file align with Morgan/original application"
+      },
+      {
+        "from": "E10",
+        "to": "E12",
+        "label": "physical envelope supports Blake's written accusation"
+      },
+      {
+        "from": "E05",
+        "to": "E15",
+        "label": "missing blunt object later recovered"
+      }
+    ]
+  },
+  "finale": {
+    "accusation_form": {
+      "q1": {
+        "label": "Who killed Blake Landry?",
+        "type": "single_select",
+        "correct": "S01",
+        "points": 40
+      },
+      "q2": {
+        "label": "Why was Blake killed?",
+        "type": "single_select",
+        "correct": "Stop Blake from exposing Morgan's 2006 scholarship fraud",
+        "points": 20
+      },
+      "q3": {
+        "label": "What was the murder weapon?",
+        "type": "single_select",
+        "correct": "Bronze Most Likely to Succeed trophy",
+        "points": 15
+      },
+      "q4": {
+        "label": "Which clue disproves the killer's alibi?",
+        "type": "single_select",
+        "correct": "The group photo metadata showing 8:31 p.m.",
+        "points": 15
+      },
+      "q5": {
+        "label": "Explain the crime sequence.",
+        "type": "short_text",
+        "points": 10,
+        "keywords": [
+          "Morgan",
+          "Blake",
+          "photo area",
+          "scholarship",
+          "trophy",
+          "hide",
+          "campaign box",
+          "false alibi"
+        ]
+      }
+    },
+    "confirmation": "Your accusation cannot be changed after submission. Review your killer, motive, weapon, and alibi evidence before confirming.",
+    "correct_reveal": {
+      "headline": "Case Solved: Morgan Tate Killed Blake Landry",
+      "body": "Morgan's political future depended on keeping the 2006 scholarship fraud buried. After the 8:31 group photo, Morgan met Blake beside the backdrop and demanded the original application. Blake refused and threatened to expose her. Morgan struck him with the bronze trophy, hid it in the campaign-display box, lost a campaign pin near the scene, and returned with a false claim that the group photo covered the murder window.",
+      "proof": [
+        "Motive: Blake's letter and the original application.",
+        "Opportunity: Dani's 8:35 test frame and Morgan's unsupported movements.",
+        "Weapon: the missing trophy recovered from the campaign-display box.",
+        "False alibi: the group photo was captured at 8:31, before the murder window."
+      ]
+    },
+    "incorrect_reveal": {
+      "headline": "The evidence points elsewhere.",
+      "body": "Your accusation did not match the complete evidence chain. Review how motive, opportunity, weapon, and the false alibi intersect before opening the full solution.",
+      "button": "Show Full Solution"
+    },
+    "confession": "Blake had controlled my life for twenty years. Every campaign, every promotion, every public success came with another demand. I went to the photo area to get the documents. He laughed and said the truth belonged to him. I saw the trophy. I struck him, hid it in the campaign box, and told myself the earlier photograph would protect me. I was wrong.",
+    "rankings": [
+      {
+        "min": 95,
+        "name": "Valedictorian Detective"
+      },
+      {
+        "min": 80,
+        "name": "Honor-Roll Investigator"
+      },
+      {
+        "min": 60,
+        "name": "Yearbook Sleuth"
+      },
+      {
+        "min": 40,
+        "name": "Hallway Witness"
+      },
+      {
+        "min": 0,
+        "name": "Detention Detective"
+      }
+    ]
+  },
+  "app_copy": {
+    "registration": {
+      "title": "Join the Investigation",
+      "subtitle": "Scan, register, and solve at your own pace.",
+      "fields": [
+        "First name or alias",
+        "Mobile number",
+        "Create 4-digit PIN",
+        "Play as individual or team",
+        "Team name if applicable"
+      ],
+      "consent": "I understand this is a fictional mystery game and agree not to photograph or share the final solution publicly.",
+      "button": "Register and Enter"
+    },
+    "resume": {
+      "title": "Resume Your Case",
+      "fields": [
+        "Mobile number",
+        "4-digit PIN"
+      ],
+      "button": "Return to Investigation"
+    },
+    "mode": {
+      "title": "Choose Your Case Length",
+      "options": [
+        {
+          "name": "Quick Case",
+          "time": "30-40 minutes",
+          "description": "Essential interviews and evidence only."
+        },
+        {
+          "name": "Standard Case",
+          "time": "55-75 minutes",
+          "description": "Full suspect interviews, all central clues, and side motives."
+        },
+        {
+          "name": "Extended Case",
+          "time": "80-100 minutes",
+          "description": "All evidence, bonus connections, and deeper red-herring stories."
+        }
+      ]
+    },
+    "home": {
+      "cards": [
+        "Continue Chapter",
+        "Suspects",
+        "Evidence",
+        "Notebook",
+        "Hints",
+        "Case Progress"
+      ],
+      "pause": "Pause Case",
+      "pause_message": "Your progress is saved. Minimum chapter timers stop while the case is paused."
+    },
+    "interview": {
+      "locked_followup": "New follow-up available after reviewing the connected evidence.",
+      "all_info_note": "No essential clue depends on another player. All required interviews and evidence can be unlocked in this case.",
+      "save_note": "Save answer to notebook"
+    },
+    "evidence": {
+      "actions": [
+        "Mark important",
+        "Link to suspect",
+        "Add to timeline",
+        "Mark explained",
+        "Mark red herring"
+      ],
+      "locked": "Continue the investigation to unlock this evidence.",
+      "view_original": "View full-screen evidence"
+    }
+  },
+  "evidence": [
+    {
+      "id": "E01",
+      "title": "Welcome Back, Class of 2006",
+      "chapter": "C00",
+      "kind": "intro",
+      "unlock": {
+        "type": "auto"
+      },
+      "summary": "The Magnolia Ridge Class of 2006 returns to Our Mom's. Blake Landry promises to reveal a secret, then is found dead.",
+      "content": "The Magnolia Ridge High School Class of 2006 has gathered at Our Mom's Restaurant & Bar for its 20-year reunion. Former class president Blake Landry plans to reveal a secret from senior year. Moments later, Blake is found dead near the reunion photo display. Determine who killed him, why, with what weapon, and which clue proves the killer lied.",
+      "details": [
+        "Victim: Blake Landry",
+        "Setting: 20-year high school reunion",
+        "Goal: identify killer, motive, weapon, and false alibi"
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "Reunion Guest Directory",
+      "chapter": "C00",
+      "kind": "directory",
+      "unlock": {
+        "type": "auto"
+      },
+      "summary": "Twelve classmates and school figures had reasons to fear Blake.",
+      "content": "Review every suspect's public profile. One person's present-day success depends on a secret from 2006.",
+      "details": []
+    },
+    {
+      "id": "E03",
+      "title": "Official Reunion Group Photo",
+      "chapter": "C01",
+      "kind": "photo",
+      "unlock": {
+        "type": "chapter",
+        "chapter": "C01"
+      },
+      "summary": "Morgan is wearing a campaign pin in the official reunion photo.",
+      "content": "The official class photograph shows Blake in front, Morgan wearing a campaign pin, Dani holding the camera, Avery looking uncomfortable, and the Class of 2006 backdrop behind them.",
+      "details": [
+        "Morgan is wearing a campaign pin",
+        "Dani took the photograph",
+        "The backdrop later becomes the crime scene"
+      ]
+    },
+    {
+      "id": "E04",
+      "title": "Blake's Reunion Remarks",
+      "chapter": "C01",
+      "kind": "transcript",
+      "unlock": {
+        "type": "chapter",
+        "chapter": "C01"
+      },
+      "summary": "Blake threatens to expose a lie buried in the time capsule.",
+      "content": "Welcome back, Magnolia Ridge Class of 2006. Some of you got better looking. Some of you got better at pretending. Before this night is over, the truth about senior year is finally coming out. We buried more than memories in that time capsule. We buried a lie. And when it opens, everyone will know who really stole the future from someone else.",
+      "details": [
+        "Threat concerns senior year",
+        "Time capsule contains proof",
+        "Someone's future was stolen"
+      ]
+    },
+    {
+      "id": "E05",
+      "title": "Preliminary Crime Scene Report",
+      "chapter": "C02",
+      "kind": "report",
+      "unlock": {
+        "type": "chapter",
+        "chapter": "C02"
+      },
+      "summary": "Blake died from blunt-force trauma between 8:34 and 8:39 p.m.",
+      "content": "Blake Landry was found beside the reunion photo backdrop. Estimated time of death: 8:34-8:39 p.m. Cause: blunt-force trauma. The bronze Most Likely to Succeed trophy is missing from the memorabilia display. A loose metallic campaign pin was recovered near the body.",
+      "details": [
+        "Murder window: 8:34-8:39 p.m.",
+        "Likely weapon: missing blunt object",
+        "Loose campaign pin found at scene"
+      ]
+    },
+    {
+      "id": "E06",
+      "title": "Anonymous Threat",
+      "chapter": "C02",
+      "kind": "note",
+      "unlock": {
+        "type": "evidence",
+        "requires": [
+          "E05"
+        ]
+      },
+      "summary": "A handwritten note warns Blake not to open the time capsule.",
+      "content": "OPEN THE TIME CAPSULE AND YOU WILL REGRET IT.",
+      "details": [
+        "Found with Blake's belongings",
+        "Paper came from the reunion registration table",
+        "A threat alone does not prove murder"
+      ]
+    },
+    {
+      "id": "E07",
+      "title": "Draft Message on Blake's Phone",
+      "chapter": "C02",
+      "kind": "phone",
+      "unlock": {
+        "type": "evidence",
+        "requires": [
+          "E05",
+          "E06"
+        ]
+      },
+      "summary": "Blake drafted a message naming M.T. and an original file.",
+      "content": "M.T. has until tonight to cooperate. After that, everyone sees the original file.",
+      "details": [
+        "Message was unsent",
+        "Initials: M.T.",
+        "Mentions an original file"
+      ]
+    },
+    {
+      "id": "E08",
+      "title": "Reunion Payment Summary",
+      "chapter": "C03",
+      "kind": "finance",
+      "unlock": {
+        "type": "lead",
+        "lead": "money"
+      },
+      "summary": "The apparent missing money is a duplicate charge, not theft.",
+      "content": "The reunion ledger shows a duplicate catering adjustment and a pending reimbursement to Tessa Nguyen. The discrepancy initially looked like missing money but is fully explained by the duplicate entry.",
+      "details": [
+        "Tessa did not steal reunion funds",
+        "Accounting confusion gave her a reason to fear embarrassment",
+        "This lead is a red herring"
+      ]
+    },
+    {
+      "id": "E09",
+      "title": "Blake's Private Blackmail List",
+      "chapter": "C03",
+      "kind": "document",
+      "unlock": {
+        "type": "lead",
+        "lead": "secrets"
+      },
+      "summary": "Blake kept leverage on six classmates, including Morgan's original application.",
+      "content": "Camille - messages. Jace - loan. Eli - song. Hart - cover-up. Riley - equity. Morgan - original application.",
+      "details": [
+        "Many people had motives",
+        "Morgan is linked to a historical document",
+        "The phrase 'original application' matches Blake's phone draft"
+      ]
+    },
+    {
+      "id": "E10",
+      "title": "Torn Scholarship Envelope",
+      "chapter": "C04",
+      "kind": "document",
+      "unlock": {
+        "type": "chapter",
+        "chapter": "C04"
+      },
+      "summary": "An aged envelope fragment bears Avery's name and the scholarship title.",
+      "content": "The torn envelope reads 'Aver...' and 'Magnolia Parish Leadership Scholarship.' It was recovered from the time-capsule materials.",
+      "details": [
+        "Avery's application existed",
+        "The application was mishandled or removed",
+        "The person threatened by this evidence is not Avery"
+      ]
+    },
+    {
+      "id": "E11",
+      "title": "Group Photo Metadata",
+      "chapter": "C04",
+      "kind": "metadata",
+      "unlock": {
+        "type": "evidence",
+        "requires": [
+          "E10"
+        ]
+      },
+      "summary": "The official group photo was captured at 8:31 p.m., before the murder window.",
+      "content": "File: reunion_group_2006_final.jpg. Captured: 8:31 p.m. Device owner: Dani LeBlanc. Location: Main reunion floor.",
+      "details": [
+        "Morgan said the photo covered 8:34-8:39 p.m.",
+        "The photo proves only where Morgan was at 8:31 p.m.",
+        "Morgan's alibi is false"
+      ]
+    },
+    {
+      "id": "E12",
+      "title": "Blake's Sealed Letter",
+      "chapter": "C04",
+      "kind": "letter",
+      "unlock": {
+        "type": "evidence",
+        "requires": [
+          "E10",
+          "E11"
+        ]
+      },
+      "summary": "Blake identifies Morgan's scholarship fraud and admits using it for leverage.",
+      "content": "Avery Brooks should have received the Magnolia Parish Leadership Scholarship. Morgan Tate removed Avery's application and used Avery's work to secure the award. I found the original documents and kept them. I told myself I was protecting the truth. In reality, I kept the secret because it gave me power. Tonight I intended to end that power. \u2014 Blake",
+      "details": [
+        "Morgan had the strongest motive",
+        "Blake planned to expose her that night",
+        "The original documents corroborate the accusation"
+      ]
+    },
+    {
+      "id": "E13",
+      "title": "Campaign Pin Evidence",
+      "chapter": "C04",
+      "kind": "physical",
+      "unlock": {
+        "type": "evidence",
+        "requires": [
+          "E05",
+          "E11"
+        ]
+      },
+      "summary": "The pin found near Blake matches the one Morgan wore in the 8:31 photo.",
+      "content": "The metallic pin recovered near Blake is the same campaign design visible on Morgan's jacket in the official group photograph. Morgan is no longer wearing it after the murder.",
+      "details": [
+        "Places Morgan's property at the scene",
+        "Supports movement after the group photo",
+        "Corroborates, but does not alone prove, the killing"
+      ]
+    },
+    {
+      "id": "E14",
+      "title": "Dani's Test Frame",
+      "chapter": "C04",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Ask Dani F2 after E11"
+      },
+      "summary": "Places Morgan with Blake inside the murder window.",
+      "content": "A test frame timestamped 8:35 p.m. shows Morgan at the edge of the backdrop. Part of Blake's jacket is visible behind the backdrop.",
+      "details": [
+        "Places Morgan with Blake inside the murder window."
+      ]
+    },
+    {
+      "id": "E15",
+      "title": "Trophy Recovery Report",
+      "chapter": "C04",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Review E12 and interview Tessa F2"
+      },
+      "summary": "Links weapon and hiding place to Morgan.",
+      "content": "The bronze trophy is recovered from a decoration box labeled Campaign Display. A small fiber matching Morgan's jacket is caught on the base.",
+      "details": [
+        "Links weapon and hiding place to Morgan."
+      ]
+    },
+    {
+      "id": "E16",
+      "title": "Bar Order Record",
+      "chapter": "C03",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Complete Private Messages lead"
+      },
+      "summary": "Clears Camille.",
+      "content": "Camille's order was entered at 8:36 p.m.; a bar-camera still shows her waiting at the counter.",
+      "details": [
+        "Clears Camille."
+      ]
+    },
+    {
+      "id": "E17",
+      "title": "Jace Call Log",
+      "chapter": "C03",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Complete Money lead"
+      },
+      "summary": "Clears Jace.",
+      "content": "Continuous call from 8:33 to 8:40 p.m., supported by patio camera footage.",
+      "details": [
+        "Clears Jace."
+      ]
+    },
+    {
+      "id": "E18",
+      "title": "Stage Audio Recording",
+      "chapter": "C03",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Interview Eli after E09"
+      },
+      "summary": "Clears Eli and sharpens the timeline.",
+      "content": "Continuous microphone recording from 8:33 to 8:41 p.m.; a crash is audible at approximately 8:37 p.m.",
+      "details": [
+        "Clears Eli and sharpens the timeline."
+      ]
+    },
+    {
+      "id": "E19",
+      "title": "Marcus Interview Recording",
+      "chapter": "C03",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Complete School Cover-Up lead"
+      },
+      "summary": "Clears Marcus and Hart.",
+      "content": "Continuous recording of Marcus and Principal Hart from 8:35 to 8:39 p.m.",
+      "details": [
+        "Clears Marcus and Hart."
+      ]
+    },
+    {
+      "id": "E20",
+      "title": "Noah's Hallway Video",
+      "chapter": "C03",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Ask Noah about his alibi"
+      },
+      "summary": "Explains the note while clearing Noah.",
+      "content": "Timestamped video from 8:35 to 8:38 p.m. shows Noah with two classmates.",
+      "details": [
+        "Explains the note while clearing Noah."
+      ]
+    },
+    {
+      "id": "E21",
+      "title": "Courier Delivery Record",
+      "chapter": "C03",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Complete Blackmail and Ownership lead"
+      },
+      "summary": "Clears Riley.",
+      "content": "Riley signs for a delivery at 8:36 p.m.; the entry camera shows Riley at the door until 8:40.",
+      "details": [
+        "Clears Riley."
+      ]
+    },
+    {
+      "id": "E22",
+      "title": "Time-Capsule Table Photo",
+      "chapter": "C04",
+      "kind": "supplemental",
+      "unlock": {
+        "type": "special",
+        "rule": "Interview Priya after E10"
+      },
+      "summary": "Clears Avery and Priya.",
+      "content": "A room photo timestamped 8:37 p.m. shows Priya and Avery at the capsule table.",
+      "details": [
+        "Clears Avery and Priya."
+      ]
+    }
+  ],
+  "leads": [
+    {
+      "id": "money",
+      "title": "Follow the Money",
+      "description": "Examine reunion finances and Blake's loan pressure.",
+      "evidence": [
+        "E08",
+        "E17"
+      ],
+      "suspects": [
+        "S05",
+        "S04"
+      ]
+    },
+    {
+      "id": "secrets",
+      "title": "Blake's Secrets",
+      "description": "Trace the names and leverage in Blake's private list.",
+      "evidence": [
+        "E09"
+      ],
+      "suspects": [
+        "S01",
+        "S03",
+        "S06",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "messages",
+      "title": "Private Messages",
+      "description": "Investigate Blake and Camille's hidden relationship.",
+      "evidence": [
+        "E16"
+      ],
+      "suspects": [
+        "S03"
+      ]
+    },
+    {
+      "id": "song",
+      "title": "The Stolen Song",
+      "description": "Check Eli's claim that Blake profited from his work.",
+      "evidence": [
+        "E18"
+      ],
+      "suspects": [
+        "S06"
+      ]
+    },
+    {
+      "id": "coverup",
+      "title": "The School Cover-Up",
+      "description": "Review the old scholarship investigation and who suppressed it.",
+      "evidence": [
+        "E19"
+      ],
+      "suspects": [
+        "S08",
+        "S10"
+      ]
+    },
+    {
+      "id": "prank",
+      "title": "The Threatening Note",
+      "description": "Determine whether Noah's note was a genuine murder threat.",
+      "evidence": [
+        "E20"
+      ],
+      "suspects": [
+        "S09"
+      ]
+    },
+    {
+      "id": "ownership",
+      "title": "Blackmail and Ownership",
+      "description": "Investigate Blake's demand for a piece of Riley's company.",
+      "evidence": [
+        "E21"
+      ],
+      "suspects": [
+        "S11"
+      ]
+    }
+  ],
+  "app_meta": {
+    "title": "Reunion at Our Mom's",
+    "subtitle": "The Class of 2006: One Last Secret",
+    "venue": "Our Mom's Restaurant & Bar",
+    "default_session": "OURMOMS",
+    "theme": {
+      "primary": "#6f1725",
+      "gold": "#d8b96a",
+      "ink": "#171415"
+    }
+  }
+}
